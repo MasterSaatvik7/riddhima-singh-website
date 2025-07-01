@@ -4,13 +4,13 @@ import backgroundImage from "./background_image.jpg";
 
 const Header = ({ profileData, activeSection, setActiveSection }) => {
   return (
-    <header className="relative overflow-hidden min-h-screen">
+    <header className="relative overflow-hidden min-h-screen w-full">
       {/* Background Image */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 w-full h-full">
         <img 
           src={backgroundImage} 
           alt="Chinese Background" 
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover min-w-full min-h-full"
         />
       </div>
       

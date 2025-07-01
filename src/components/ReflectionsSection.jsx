@@ -57,14 +57,19 @@ const ReflectionsSection = ({ reflections, publications }) => {
                   {pub.year}
                 </span>
               </div>
-              <div className="flex items-center gap-4 text-sm text-gray-600">
-                <span className="flex items-center gap-1">
-                  <Award className="w-3 h-3" />
-                  {pub.type}
-                </span>
-                <span className="flex items-center gap-1">
-                  <Globe className="w-3 h-3" />
-                  {pub.focus}
+              <div className="flex items-center justify-between text-sm">
+                <div className="flex items-center gap-4 text-gray-600">
+                  <span className="flex items-center gap-1">
+                    <Award className="w-3 h-3" />
+                    {pub.type}
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Globe className="w-3 h-3" />
+                    {pub.focus}
+                  </span>
+                </div>
+                <span className="text-red-600 hover:text-red-700 font-medium flex items-center gap-1">
+                  Read more <ChevronRight className="w-3 h-3" />
                 </span>
               </div>
             </a>
